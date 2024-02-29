@@ -4,8 +4,8 @@ export function Footer() {
   return (
     <footer>
       <svg
-        width="211"
-        height="68"
+        width="122"
+        height="39.44"
         viewBox="0 0 211 68"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -31,6 +31,7 @@ export function Footer() {
           fill="#FFFFFF"
         />
       </svg>
+      <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   );
 }
