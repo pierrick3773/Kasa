@@ -8,6 +8,7 @@ import { Card } from "./Card.jsx";
 import { Footer } from "./Footer.jsx";
 import annoncesData from "../logement.json";
 console.log(annoncesData);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // a priori obligé de faire cette manimp parceque le projet est sur reactrouter17

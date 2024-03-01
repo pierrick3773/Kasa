@@ -40,11 +40,13 @@ main .card-container .card {
   );
 }
 main .card-container {
-  width: 100%;
+  width: 80%;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  background: rgba(246, 246, 246, 1);
+  padding-top: 50px;
 }
 main .card-container .card img {
   width: 100%;
