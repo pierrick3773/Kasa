@@ -40,7 +40,7 @@ main .card-container .card {
   );
 }
 main .card-container {
-  width: 80%;
+  width: 100%;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
