@@ -1,13 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 // import App from "./App.jsx";
-import "./index.css";
-import { Header } from "./header.jsx";
-import { BrowserRouter } from "react-router-dom";
-import { Card } from "./Card.jsx";
-import { Footer } from "./Footer.jsx";
-import annoncesData from "../logement.json";
-console.log(annoncesData);
+import "./style/index.css";
+import "./style/header.css";
+import "./style/footer.css";
+import "./style/home.css";
+import "./style/card.css";
+import { Header } from "./components/Header.jsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Footer } from "./components/Footer.jsx";
+import { Home } from "./pages/Home.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,11 +18,9 @@ root.render(
   <BrowserRouter>
     <Header />
     <main>
-      <section className="card-container">
-        {annoncesData.map((annonce, index) => (
-          <Card key={index} src={annonce.cover} />
-        ))}
-      </section>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </main>
     <Footer />
     {/* <App /> */}
