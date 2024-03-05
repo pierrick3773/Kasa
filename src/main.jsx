@@ -10,6 +10,8 @@ import { Header } from "./components/Header.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer.jsx";
 import { Home } from "./pages/Home.jsx";
+import annoncesData from "./json/logement.json";
+import { FicheLogement } from "./pages/Fiche-Logement.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,6 +22,7 @@ root.render(
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/logement/:id" element={<FicheLogement />} />
       </Routes>
     </main>
     <Footer />
