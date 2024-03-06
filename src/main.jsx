@@ -6,6 +6,8 @@ import "./style/header.css";
 import "./style/footer.css";
 import "./style/home.css";
 import "./style/card.css";
+import "./style/fiche-logement.css";
+import "./style/tags.css";
 import { Header } from "./components/Header.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer.jsx";

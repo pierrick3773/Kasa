@@ -18,12 +18,18 @@ export function FicheLogement() {
   const tags = annonce.tags;
 
   return (
-    <div>
+    <div className="fiche-logement">
       <Slide pictures={annonce.pictures} />
-      <h1>{titre}</h1>
-      <p>{location}</p>
-      <p>{nameHost}</p>
-      <img src={pictureHost} alt="photo du proprietaire" />
+      <section className="top">
+        <div className="title">
+          <h2>{titre}</h2>
+          <p>{location}</p>
+        </div>
+        <div className="host">
+          <p>{nameHost}</p>
+          <img src={pictureHost} alt="photo du proprietaire" />
+        </div>
+      </section>
       <Tags tags={tags} />
     </div>
   );

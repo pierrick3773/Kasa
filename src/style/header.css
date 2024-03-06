@@ -18,6 +18,8 @@ header nav {
 
 header nav li {
   list-style-type: none;
+  font-weight: 500;
+  text-align: right;
 }
 header svg {
   padding-top: 20px;
