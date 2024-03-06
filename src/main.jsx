@@ -8,13 +8,14 @@ import "./style/home.css";
 import "./style/card.css";
 import "./style/fiche-logement.css";
 import "./style/tags.css";
+import "./style/banner.css";
 import { Header } from "./components/Header.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer.jsx";
 import { Home } from "./pages/Home.jsx";
 import annoncesData from "./json/logement.json";
 import { FicheLogement } from "./pages/Fiche-Logement.jsx";
-
+import { Apropos } from "./pages/A-Propos.jsx";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // a priori obligé de faire cette manimp parceque le projet est sur reactrouter17
@@ -25,6 +26,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/logement/:id" element={<FicheLogement />} />
+        <Route path="/apropos" element={<Apropos />} />
       </Routes>
     </main>
     <Footer />
