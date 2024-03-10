@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import annoncesData from "../json/logement.json";
+import annoncesData from "../data/logement.json";
 import { Slide } from "../components/Slide";
 import { Tags } from "../components/Tags";
 

@@ -1,6 +1,6 @@
 import { Banner } from "../components/Banner";
 import { Card } from "../components/Card";
-import annoncesData from "../json/logement.json";
+import annoncesData from "../data/logement.json";
 
 export function Home() {
   return (

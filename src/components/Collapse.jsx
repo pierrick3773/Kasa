@@ -1,16 +1,16 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 
-export const Collapsible = (props) => {
-  const [open, setOPen] = useState(false);
-  const toggle = () => {
-    setOPen(!open);
+export const Collapsible = ({ label, content }) => {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(!open);
   };
-  const contentRef = useRef();
+
   return (
     <div>
-      <button>
-        {toggle}={props.label}
-      </button>
+      <button onClick={handleClick}>{label}</button>
+      {open && <div>{content}</div>}
     </div>
   );
 };

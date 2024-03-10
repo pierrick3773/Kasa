@@ -8,13 +8,15 @@ footer {
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-}
-footer svg {
-  width: 100%;
-  padding-top: 50px;
-}
-footer p {
-  color: white;
-  width: 100%;
-  text-align: center;
+
+  svg {
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  p {
+    color: white;
+    width: 100%;
+    text-align: center;
+  }
 }

@@ -3,9 +3,8 @@
   flex-direction: row;
   gap: 10px;
 }
-
 .fiche-logement .tags span {
-  background: rgba(255, 96, 96, 1);
+  background: rgb(255, 96, 96);
   width: 115px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -17,4 +16,4 @@
   line-height: 20px;
   letter-spacing: 0em;
   text-align: center;
-}
+}/*# sourceMappingURL=tags.css.map */

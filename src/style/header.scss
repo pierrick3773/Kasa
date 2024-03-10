@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 20px;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-right: 150px;
+    padding-top: 20px;
+
+    li {
+      list-style-type: none;
+      font-weight: 500;
+      text-align: right;
+    }
+  }
+
+  svg {
+    padding-top: 20px;
+    padding-left: 147px;
+  }
+}
