@@ -47,6 +47,9 @@ export function Slide({ pictures }) {
           <img src={picture} alt="Diaporama" />
         </div>
       ))}
+      <div className="counter">
+        {currentSlide + 1}/{pictures.length}
+      </div>
     </div>
   );
 }
