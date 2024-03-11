@@ -34,12 +34,14 @@ export function Slide({ pictures }) {
 
   return (
     <div className="slide-container">
-      <button className="prev">
-        <i class="fa-solid fa-chevron-left"></i>
-      </button>
-      <button className="next">
-        <i class="fa-solid fa-chevron-right"></i>
-      </button>
+      <div className="arrow">
+        <button className="prev">
+          <i className="fa-solid fa-chevron-left"></i>
+        </button>
+        <button className="next">
+          <i className="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
       {pictures.map((picture, index) => (
         <div key={index} className="slide">
           <img src={picture} alt="Diaporama" />

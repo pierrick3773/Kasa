@@ -1,0 +1,54 @@
+.slide-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: relative; /* ajouter cette ligne pour positionner les boutons de manière absolue par rapport au conteneur parent */
+
+  .arrow {
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .next {
+      grid-area: 1 / 1 / 2 / 2;
+      z-index: 2;
+      position: absolute;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: white;
+      right: 0;
+      font-size: 96px;
+      padding-right: 15px;
+    }
+
+    .prev {
+      grid-area: 1 / 1 / 2 / 2;
+      z-index: 2;
+      position: absolute;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: white;
+      left: 0;
+      font-size: 96px;
+      padding-left: 15px;
+    }
+  }
+
+  .slide {
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 1;
+    width: 100%;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

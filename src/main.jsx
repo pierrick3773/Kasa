@@ -1,15 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import "./style/index.scss";
-import "./style/header.scss";
-import "./style/footer.scss";
-import "./style/home.scss";
-import "./style/card.scss";
-import "./style/fiche-logement.scss";
-import "./style/tags.scss";
-import "./style/banner.scss";
-import "./style/collapse.scss";
+import "./style/_index.scss";
+import "./style/_header.scss";
+import "./style/_footer.scss";
+import "./style/_home.scss";
+import "./style/_card.scss";
+import "./style/_fiche-logement.scss";
+import "./style/_tags.scss";
+import "./style/_banner.scss";
+import "./style/_collapse.scss";
+import "./style/_slide.scss";
 import { Header } from "./components/Header.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer.jsx";
