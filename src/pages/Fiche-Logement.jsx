@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import annoncesData from "../data/logement.json";
-import { Slide } from "../components/Slide";
+import { Slide } from "../components/Slide.jsx";
 import { Tags } from "../components/Tags";
 
 export function FicheLogement() {
