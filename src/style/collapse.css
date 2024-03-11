@@ -1,0 +1,34 @@
+.a-propos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.a-propos .collapse {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.a-propos .collapse .button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(255, 96, 96);
+  height: 54px;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.a-propos .collapse .button label {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=collapse.css.map */

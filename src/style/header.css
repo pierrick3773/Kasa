@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 20px;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+header nav a {
+  list-style-type: none;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}/*# sourceMappingURL=header.css.map */

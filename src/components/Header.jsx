@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 export function Header() {
   return (
@@ -32,8 +32,8 @@ export function Header() {
         />
       </svg>
       <nav>
-        <li>Accueil</li>
-        <li>A Propos</li>
+        <Link to="/"> Accueil </Link>
+        <Link to="/apropos"> A Propos </Link>
       </nav>
     </header>
   );

@@ -1,28 +1,30 @@
 header {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  padding-bottom: 20px;
+  justify-content: space-between;
 
+  padding-bottom: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 20px;
   nav {
     display: flex;
     flex-direction: row;
-    width: 100%;
+
     align-items: center;
     justify-content: flex-end;
     gap: 30px;
-    padding-right: 150px;
-    padding-top: 20px;
 
-    li {
+    a {
       list-style-type: none;
       font-weight: 500;
-      text-align: right;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 1);
     }
   }
 
-  svg {
-    padding-top: 20px;
-    padding-left: 147px;
-  }
+  // svg {
+  //   padding-top: 20px;
+  //   padding-left: 147px;
+  // }
 }

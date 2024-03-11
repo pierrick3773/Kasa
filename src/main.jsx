@@ -9,6 +9,7 @@ import "./style/card.scss";
 import "./style/fiche-logement.scss";
 import "./style/tags.scss";
 import "./style/banner.scss";
+import "./style/collapse.scss";
 import { Header } from "./components/Header.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer.jsx";
