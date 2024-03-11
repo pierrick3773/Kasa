@@ -23,12 +23,12 @@ export function Slide({ pictures }) {
 
     showSlide(currentSlide);
 
-    document.querySelector(".prev").addEventListener("click", prevSlide);
-    document.querySelector(".next").addEventListener("click", nextSlide);
+    document?.querySelector(".prev")?.addEventListener("click", prevSlide);
+    document?.querySelector(".next")?.addEventListener("click", nextSlide);
 
     return () => {
-      document.querySelector(".prev").removeEventListener("click", prevSlide);
-      document.querySelector(".next").removeEventListener("click", nextSlide);
+      document?.querySelector(".prev")?.removeEventListener("click", prevSlide);
+      document?.querySelector(".next")?.removeEventListener("click", nextSlide);
     };
   }, [currentSlide]);
 
