@@ -2,7 +2,8 @@ import { useParams } from "react-router-dom";
 import annoncesData from "../data/logement.json";
 import { Slide } from "../components/Slide.jsx";
 import { Tags } from "../components/Tags";
-
+import { Rating } from "../components/Rating.jsx";
+import { Collapsible } from "../components/Collapse.jsx";
 export function FicheLogement() {
   const { id } = useParams();
   const annonce = annoncesData.find((annonce) => annonce.id === id);
@@ -16,6 +17,8 @@ export function FicheLogement() {
   const nameHost = annonce.host.name;
   const pictureHost = annonce.host.picture;
   const tags = annonce.tags;
+  const equipments = annonce.equipments;
+  const description = annonce.description;
 
   return (
     <div className="fiche-logement">
@@ -30,7 +33,14 @@ export function FicheLogement() {
           <img src={pictureHost} alt="photo du proprietaire" />
         </div>
       </section>
-      <Tags tags={tags} />
+      <section className="middle">
+        <Tags tags={tags} />
+        <Rating />
+      </section>
+      <section className="bottom">
+        <Collapsible label="Description" content={description} />
+        <Collapsible label="Équipements" content={equipments} />
+      </section>
     </div>
   );
 }
