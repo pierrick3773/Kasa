@@ -4,7 +4,7 @@ import { Collapsible } from "../components/Collapse.jsx";
 export function Apropos() {
   return (
     <div className="a-propos">
-      <Banner></Banner>
+      <Banner image="src/assets/Image-source-2.svg" />
       <Collapsible
         label="Fiabilité"
         content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les

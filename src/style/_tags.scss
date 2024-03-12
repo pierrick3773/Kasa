@@ -6,7 +6,7 @@
 
     span {
       background: rgba(255, 96, 96, 1);
-      width: 115px;
+      width: auto;
       padding-top: 3px;
       padding-bottom: 3px;
       border-radius: 10px;
@@ -17,6 +17,8 @@
       line-height: 20px;
       letter-spacing: 0em;
       text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }

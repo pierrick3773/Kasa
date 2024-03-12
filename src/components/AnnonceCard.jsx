@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export function AnnounceCard({ cover, titre }) {
+export function AnnounceCard({ cover, titre, id }) {
   return (
-    <div className="announce-card">
+    <Link to={`/logement/${id}`} className="announce-card">
       <div className="filter"></div>
       <img src={cover} alt="Announce cover" />
 
       <p>{titre} </p>
-    </div>
+    </Link>
   );
 }
