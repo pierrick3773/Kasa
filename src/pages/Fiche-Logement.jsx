@@ -39,7 +39,16 @@ export function FicheLogement() {
       </section>
       <section className="bottom">
         <Collapsible label="Description" content={description} />
-        <Collapsible label="Équipements" content={equipments} />
+        <Collapsible
+          label="Équipements"
+          content={
+            <ul>
+              {equipments.map((equipment, index) => (
+                <li key={index}>{equipment}</li>
+              ))}
+            </ul>
+          }
+        ></Collapsible>
       </section>
     </div>
   );
