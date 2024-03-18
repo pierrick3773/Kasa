@@ -1,9 +1,9 @@
-export function Banner({ image }) {
+export function Banner({ image, title }) {
   return (
     <div className="banner-container">
-      <dir className="filter"></dir>
+      <div className="filter"></div>
       <img src={image} alt="banniere" />
-      <p>Chez vous, partout et ailleurs</p>
+      <p>{title}</p>
     </div>
   );
 }

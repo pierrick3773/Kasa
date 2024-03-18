@@ -23,10 +23,10 @@ export function Slide({ pictures }) {
 
     showSlide(currentSlide);
     // utile ? si de toute façon ce n'est pas afficher !
-    if (slides.length > 1) {
-      document?.querySelector(".prev")?.addEventListener("click", prevSlide);
-      document?.querySelector(".next")?.addEventListener("click", nextSlide);
-    }
+
+    document?.querySelector(".prev")?.addEventListener("click", prevSlide);
+    document?.querySelector(".next")?.addEventListener("click", nextSlide);
+
     return () => {
       if (slides.length > 1) {
         document

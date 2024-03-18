@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import "./style/_index.scss";
 import "./style/_header.scss";
 import "./style/_footer.scss";
@@ -19,6 +18,7 @@ import { Home } from "./pages/Home.jsx";
 import annoncesData from "./data/logement.json";
 import { FicheLogement } from "./pages/Fiche-Logement.jsx";
 import { Apropos } from "./pages/A-Propos.jsx";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
@@ -31,6 +31,5 @@ root.render(
       </Routes>
     </main>
     <Footer />
-    {/* <App /> */}
   </BrowserRouter>
 );
