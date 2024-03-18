@@ -7,11 +7,16 @@ export const Collapsible = ({ label, content }) => {
     setOpen(!open);
   };
 
+  const returnChevron = {
+    transition: "transform 0.3s ease-in-out",
+    transform: open ? "rotate(180deg)" : "rotate(0)",
+  };
+
   return (
     <div className="collapse">
-      <div className="button">
+      <div className="button" onClick={handleClick}>
         <span className="collapse-label">{label}</span>
-        <i className="fa-solid fa-angle-down" onClick={handleClick}></i>
+        <i className="fa-solid fa-angle-down" style={returnChevron}></i>
       </div>
       {open && <div className="content">{content}</div>}
     </div>

@@ -22,7 +22,6 @@ export function Slide({ pictures }) {
     }
 
     showSlide(currentSlide);
-    // utile ? si de toute façon ce n'est pas afficher !
 
     document?.querySelector(".prev")?.addEventListener("click", prevSlide);
     document?.querySelector(".next")?.addEventListener("click", nextSlide);

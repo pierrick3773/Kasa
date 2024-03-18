@@ -11,6 +11,7 @@ import "./style/_banner.scss";
 import "./style/_collapse.scss";
 import "./style/_slide.scss";
 import "./style/_a-propos.scss";
+import "./style/_ratings.scss";
 import { Header } from "./components/Header.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer.jsx";
