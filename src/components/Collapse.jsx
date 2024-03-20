@@ -16,7 +16,7 @@ export const Collapsible = ({ label, content }) => {
     <div className="collapse">
       <div className="button" onClick={handleClick}>
         <span className="collapse-label">{label}</span>
-        <i className="fa-solid fa-angle-down" style={returnChevron}></i>
+        <i className="fa-solid fa-angle-up" style={returnChevron}></i>
       </div>
       {open && <div className="content">{content}</div>}
     </div>
