@@ -12,6 +12,7 @@ import "./style/_collapse.scss";
 import "./style/_slide.scss";
 import "./style/_a-propos.scss";
 import "./style/_ratings.scss";
+import "./style/_error.scss";
 import { Header } from "./components/Header.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer.jsx";
@@ -19,6 +20,7 @@ import { Home } from "./pages/Home.jsx";
 import annoncesData from "./data/logement.json";
 import { FicheLogement } from "./pages/Fiche-Logement.jsx";
 import { Apropos } from "./pages/A-Propos.jsx";
+import { Error } from "./pages/Erreur-404.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -29,6 +31,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/logement/:id" element={<FicheLogement />} />
         <Route path="/apropos" element={<Apropos />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </main>
     <Footer />

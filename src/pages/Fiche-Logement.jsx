@@ -1,15 +1,19 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import annoncesData from "../data/logement.json";
 import { Slide } from "../components/Slide.jsx";
 import { Tags } from "../components/Tags";
 import { Rating } from "../components/Rating.jsx";
 import { Collapsible } from "../components/Collapse.jsx";
+import { Error } from "../pages/Erreur-404";
+
 export function FicheLogement() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const annonce = annoncesData.find((annonce) => annonce.id === id);
 
   if (!annonce) {
-    return <div>Aucune annonce trouvée pour cet identifiant.</div>;
+    navigate("/Erreur-404");
+    return null;
   }
 
   const titre = annonce.title;
@@ -48,7 +52,7 @@ export function FicheLogement() {
               ))}
             </ul>
           }
-        ></Collapsible>
+        />
       </section>
     </div>
   );
