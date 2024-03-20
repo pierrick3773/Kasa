@@ -12,3 +12,10 @@ main {
   padding-left: 150px;
   padding-right: 150px;
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

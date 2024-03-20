@@ -74,3 +74,15 @@ main {
     }
   }
 }
+@media screen and (max-width: 768px) {
+  main {
+    .card-container {
+      background: none;
+      padding-top: 0px;
+      .announce-card {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}

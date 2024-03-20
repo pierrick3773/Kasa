@@ -64,3 +64,9 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .a-propos .collapse,
+  .fiche-logement .collapse {
+    width: 100%;
+  }
+}
