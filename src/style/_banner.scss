@@ -7,8 +7,8 @@
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  align-items: center; // centrer l'image verticalement
-  justify-items: center; // centrer l'image horizontalement
+  align-items: center;
+  justify-items: center;
 
   img {
     width: 100%;
@@ -28,6 +28,7 @@
     text-align: left;
     color: #fff;
     z-index: 3;
+    padding-left: 30px;
   }
 
   .filter {
@@ -40,5 +41,21 @@
     border-radius: 20px;
     object-fit: cover;
     padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-container {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    .filter {
+      width: 100%;
+    }
+    p {
+      max-width: 100%;
+      font-size: 38px;
+    }
   }
 }

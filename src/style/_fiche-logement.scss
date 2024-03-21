@@ -9,63 +9,68 @@
     object-fit: cover;
     border-radius: 20px;
   }
-
-  .top {
+  .lodging {
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: space-between;
-
-    .host {
+    width: 100%;
+    .lodgingInfos {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      width: 80%;
+      justify-content: space-between;
       gap: 10px;
-      align-items: center;
 
-      img {
-        border-radius: 50%;
-        width: 64px;
-        height: 64px;
-      }
+      .title {
+        h2 {
+          color: rgba(255, 96, 96, 1);
+          font-size: 36px;
+          font-weight: 500;
+          line-height: 51px;
+          letter-spacing: 0em;
+          text-align: left;
+          margin-bottom: 2px;
+          margin-top: 5px;
+        }
 
-      p {
-        color: rgba(255, 96, 96, 1);
-        width: 87px;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 26px;
-        letter-spacing: 0em;
-        text-align: right;
+        p {
+          font-weight: 500;
+          font-size: 18px;
+          margin-top: 0px;
+        }
       }
     }
+    .lodgingUser {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      .host {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
 
-    .title {
-      h2 {
-        color: rgba(255, 96, 96, 1);
-        font-size: 36px;
-        font-weight: 500;
-        line-height: 51px;
-        letter-spacing: 0em;
-        text-align: left;
-        margin-bottom: 2px;
-        margin-top: 5px;
-      }
+        img {
+          border-radius: 50%;
+          width: 64px;
+          height: 64px;
+        }
 
-      p {
-        font-weight: 500;
-        font-size: 18px;
-        margin-top: 0px;
+        p {
+          color: rgba(255, 96, 96, 1);
+          width: 87px;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          letter-spacing: 0em;
+          text-align: right;
+        }
       }
     }
   }
-  .middle {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .bottom {
+  .lodgingCollapse {
     width: 100%;
     display: flex;
     flex-direction: row;

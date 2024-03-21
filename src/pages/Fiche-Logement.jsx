@@ -27,21 +27,23 @@ export function FicheLogement() {
   return (
     <div className="fiche-logement">
       <Slide pictures={annonce.pictures} />
-      <section className="top">
-        <div className="title">
-          <h2>{titre}</h2>
-          <p>{location}</p>
+      <section className="lodging">
+        <div className="lodgingInfos">
+          <div className="title">
+            <h2>{titre}</h2>
+            <p>{location}</p>
+          </div>
+          <Tags tags={tags} />
         </div>
-        <div className="host">
-          <p>{nameHost}</p>
-          <img src={pictureHost} alt="photo du proprietaire" />
+        <div className="lodgingUser">
+          <div className="host">
+            <p>{nameHost}</p>
+            <img src={pictureHost} alt="photo du proprietaire" />
+          </div>
+          <Rating />
         </div>
       </section>
-      <section className="middle">
-        <Tags tags={tags} />
-        <Rating />
-      </section>
-      <section className="bottom">
+      <section className="lodgingCollapse">
         <Collapsible label="Description" content={description} />
         <Collapsible
           label="Équipements"

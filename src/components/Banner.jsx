@@ -3,7 +3,7 @@ export function Banner({ image, title }) {
     <div className="banner-container">
       <div className="filter"></div>
       <img src={image} alt="banniere" />
-      <p>{title}</p>
+      <p dangerouslySetInnerHTML={{ __html: title }} />
     </div>
   );
 }

@@ -1,24 +1,28 @@
 .fiche-logement {
-  .tags {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  .lodging {
+    .lodgingInfos {
+      .tags {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
 
-    span {
-      background: rgba(255, 96, 96, 1);
-      width: auto;
-      padding-top: 3px;
-      padding-bottom: 3px;
-      border-radius: 10px;
-      text-align: center;
-      color: #fff;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 20px;
-      letter-spacing: 0em;
-      text-align: center;
-      padding-left: 10px;
-      padding-right: 10px;
+        span {
+          background: rgba(255, 96, 96, 1);
+          width: auto;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          border-radius: 10px;
+          text-align: center;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: center;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
     }
   }
 }

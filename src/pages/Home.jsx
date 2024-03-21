@@ -1,7 +1,7 @@
 import { Banner } from "../components/Banner";
 import { Card } from "../components/Card";
 import annoncesData from "../data/logement.json";
-let title = "Chez vous, partout et ailleurs";
+let title = "Chez vous,<wbr/> partout&nbsp;et&nbsp;ailleurs";
 export function Home() {
   return (
     <div>
