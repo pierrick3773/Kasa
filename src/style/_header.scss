@@ -18,7 +18,9 @@ header {
     align-items: center;
     justify-content: flex-end;
     gap: 30px;
-
+    .active {
+      text-decoration: underline;
+    }
     a {
       list-style-type: none;
       font-weight: 500;
@@ -30,7 +32,6 @@ header {
 
 @media screen and (max-width: 768px) {
   header {
-    padding-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;

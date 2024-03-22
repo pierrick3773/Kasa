@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 
 export function Header() {
   return (
@@ -34,8 +34,17 @@ export function Header() {
         </svg>
       </h1>
       <nav>
-        <Link to="/"> Accueil </Link>
-        <Link to="/apropos"> A Propos </Link>
+        <NavLink to="/" className={location.pathname === "/" ? "active" : ""}>
+          {" "}
+          Accueil{" "}
+        </NavLink>
+        <NavLink
+          to="/apropos"
+          className={location.pathname === "/apropos" ? "active" : ""}
+        >
+          {" "}
+          A Propos{" "}
+        </NavLink>
       </nav>
     </header>
   );

@@ -78,3 +78,60 @@
     gap: 80px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .fiche-logement {
+    .slide-container {
+      height: 255px;
+      .slide {
+        height: 255px;
+        img {
+          height: 255px;
+        }
+      }
+      .counter {
+        display: none;
+      }
+      .arrow {
+        height: 255px;
+        .prev,
+        .next {
+          font-size: 24px;
+        }
+      }
+    }
+    .lodging {
+      flex-direction: column;
+      .lodgingInfos {
+        width: 100%;
+        .title {
+          width: 100%;
+          h2 {
+            font-size: 25px;
+            line-height: 38px;
+          }
+        }
+        .tags {
+          span {
+            font-size: 11px;
+          }
+        }
+      }
+      .lodgingUser {
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+        .ratings-star {
+          gap: 3px;
+          .fa-star {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+    .lodgingCollapse {
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+}

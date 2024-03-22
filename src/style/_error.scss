@@ -27,3 +27,19 @@
     color: black;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .error-404 {
+    margin: 25px;
+    margin-right: 25px;
+    .top {
+      padding-top: 90px;
+      font-size: 120px;
+    }
+    .oups {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+}
