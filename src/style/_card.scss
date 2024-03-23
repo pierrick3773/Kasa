@@ -31,7 +31,7 @@ main {
       position: relative;
       margin: 10px;
       min-height: 340px;
-      max-height: 341px; /* Réduire la hauteur maximale de la carte à 450px */
+      max-height: 341px;
       height: auto;
 
       .filter {
@@ -53,7 +53,7 @@ main {
       img {
         width: 100%;
         min-height: 340px;
-        max-height: 341px; /* Réduire la hauteur maximale de la carte à 450px */
+        max-height: 341px;
         height: auto;
         border-radius: 10px;
         object-fit: cover;
@@ -101,7 +101,7 @@ main {
   main {
     .card-container {
       background: none;
-      padding-top: 0px;
+      padding-top: 15px;
       display: flex;
       flex-direction: column;
 

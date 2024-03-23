@@ -111,22 +111,11 @@
             line-height: 38px;
           }
         }
-        .tags {
-          span {
-            font-size: 11px;
-          }
-        }
       }
       .lodgingUser {
         flex-direction: row-reverse;
         align-items: center;
         width: 100%;
-        .ratings-star {
-          gap: 3px;
-          .fa-star {
-            font-size: 19px;
-          }
-        }
       }
     }
     .lodgingCollapse {

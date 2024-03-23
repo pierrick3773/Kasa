@@ -17,3 +17,21 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .fiche-logement {
+    .lodging {
+      .lodgingUser {
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+        .ratings-star {
+          gap: 3px;
+          .fa-star {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}

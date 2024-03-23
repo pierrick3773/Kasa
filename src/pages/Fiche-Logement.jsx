@@ -8,12 +8,10 @@ import { Error } from "../pages/Erreur-404";
 
 export function FicheLogement() {
   const { id } = useParams();
-  const navigate = useNavigate();
   const annonce = annoncesData.find((annonce) => annonce.id === id);
 
   if (!annonce) {
-    navigate("/Erreur-404");
-    return null;
+    return <Error />;
   }
 
   const titre = annonce.title;

@@ -26,3 +26,16 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .fiche-logement {
+    .lodging {
+      .lodgingInfos {
+        .tags {
+          span {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
